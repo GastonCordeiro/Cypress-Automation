@@ -4,7 +4,11 @@
   "email": "hello@cypress.io",
   "gender": "Male",
   "mobile": "3517330299",
-  "dateOfBirth": "hello@cypress.io",
+  "dateOfBirth": [
+    "December", 
+    "1990", 
+    "31"
+  ],
   "subjects": "3333",
   "hobbies": "movies",
   "picture": "asd",
