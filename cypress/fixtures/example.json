@@ -9,11 +9,14 @@
     "1990", 
     "31"
   ],
-  "subjects": "3333",
-  "hobbies": "movies",
-  "picture": "asd",
+  "subjects": "English",
+  "hobbies": [
+    "Sports", 
+    "Music"
+  ],
+  "picture": "580b57fcd9996e24bc43c325.png",
   "currentAddress": "wachuwachu1",
-  "state": "Rajastan",
+  "state": "Rajasthan",
   "city": "Jaipur"
   
 }
