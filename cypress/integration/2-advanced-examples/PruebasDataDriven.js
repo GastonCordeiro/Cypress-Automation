@@ -1,7 +1,7 @@
 /// <reference types="Cypress"/>
 
 //Suite de casos de prueba avanzados
-describe('Segundo conjunto de casos de prueba avanzadas', function(){
+describe('Segundo conjunto de casos de pruebas data driven', function(){
     before(function(){
         //Cargamos los valores del archivo example.json en un objeto de datos
         cy.fixture('example').then(function(datos){
