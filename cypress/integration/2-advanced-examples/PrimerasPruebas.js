@@ -1,6 +1,14 @@
 
 /// <reference types="Cypress"/>
 
+//Importamos clases de PageObjects
+import AddressPage from '../../support/PageObjects/AddressPage'
+import AuthenticationPage from '../../support/PageObjects/AuthenticationPage'
+import HomePage from '../../support/PageObjects/HomePage'
+import PaymentPage from '../../support/PageObjects/PaymentPage'
+import ShippingPage from '../../support/PageObjects/ShippingPage'
+import ShoppingCartSummaryPage from '../../support/PageObjects/ShoppingCartSummaryPage'
+
 describe('primer conjunto de casos de prueba', function()
 {
     beforeEach(()=>{

@@ -17,15 +17,18 @@ describe('Tercer feature de casos avanzados', function(){
     it("Realizar compra de celulares basadas en su nombre", function(){
         //cy.get('ul[class="nav navbar-nav"]:has(a:contains("Phones & PDAs"))').click()
         cy.get('#menu ul a:contains("Phones & PDAs")').click()
-        cy.agregarElementoAlCarrito(this.datos.phone1)
-        cy.agregarElementoAlCarrito(this.datos.phone2)
-        cy.agregarElementoAlCarrito(this.datos.phone3)
-       
+
+        this.datos.articulo.forEach(function(articulo){
+            cy.agregarElementoAlCarrito(articulo)
+        })
+           
         cy.get('.btn-inverse').click()
 
-        cy.verificamosElementosCarritoDD(this.datos.phone1)
-        cy.verificamosElementosCarritoDD(this.datos.phone2)
-        cy.verificamosElementosCarritoDD(this.datos.phone3)
+        this.datos.articulo.forEach(function(articulo){
+            cy.verificamosElementosCarritoDD(articulo)
+        })
+
+        
     }) 
 
 })
